@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-16T23:44:16.979017" rpa="false" schemaversion="5">
+<suite id="s1" name="Keyword Driven" source="C:\Users\Omistaja\Downloads\RobotDemo-master\RobotDemo-master\keyword_driven.robot">
+<test id="s1-t1" name="Push button" line="16">
+<kw name="Push Button" owner="CalculatorLibrary">
+<arg>1</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.034407" elapsed="0.000000"/>
+</kw>
+<kw name="Result Should Be" owner="CalculatorLibrary">
+<arg>1</arg>
+<doc>Verifies that the current result is ``expected``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.035404" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-16T23:44:17.033408" elapsed="0.002999"/>
+</test>
+<test id="s1-t2" name="Push multiple buttons" line="20">
+<kw name="Push Button" owner="CalculatorLibrary">
+<arg>1</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.037733" elapsed="0.000000"/>
+</kw>
+<kw name="Push Button" owner="CalculatorLibrary">
+<arg>2</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.039155" elapsed="0.000000"/>
+</kw>
+<kw name="Result Should Be" owner="CalculatorLibrary">
+<arg>12</arg>
+<doc>Verifies that the current result is ``expected``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.039155" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-16T23:44:17.037733" elapsed="0.001422"/>
+</test>
+<test id="s1-t3" name="Simple calculation" line="25">
+<kw name="Push Button" owner="CalculatorLibrary">
+<arg>1</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.043198" elapsed="0.000000"/>
+</kw>
+<kw name="Push Button" owner="CalculatorLibrary">
+<arg>+</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.043198" elapsed="0.000000"/>
+</kw>
+<kw name="Push Button" owner="CalculatorLibrary">
+<arg>2</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.043198" elapsed="0.000000"/>
+</kw>
+<kw name="Push Button" owner="CalculatorLibrary">
+<arg>=</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.043198" elapsed="0.000000"/>
+</kw>
+<kw name="Result Should Be" owner="CalculatorLibrary">
+<arg>3</arg>
+<doc>Verifies that the current result is ``expected``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.043198" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-16T23:44:17.042183" elapsed="0.001015"/>
+</test>
+<test id="s1-t4" name="Longer calculation" line="32">
+<kw name="Push Buttons" owner="CalculatorLibrary">
+<arg>5 + 4 - 3 * 2 / 1 =</arg>
+<doc>Pushes the specified ``buttons``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.047216" elapsed="0.000376"/>
+</kw>
+<kw name="Result Should Be" owner="CalculatorLibrary">
+<arg>3</arg>
+<doc>Verifies that the current result is ``expected``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.047592" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-16T23:44:17.046704" elapsed="0.000888"/>
+</test>
+<test id="s1-t5" name="Clear" line="36">
+<kw name="Push Button" owner="CalculatorLibrary">
+<arg>1</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.048620" elapsed="0.000000"/>
+</kw>
+<kw name="Push Button" owner="CalculatorLibrary">
+<arg>C</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.048620" elapsed="0.000000"/>
+</kw>
+<kw name="Result Should Be" owner="CalculatorLibrary">
+<arg>${EMPTY}</arg>
+<doc>Verifies that the current result is ``expected``.</doc>
+<status status="PASS" start="2024-07-16T23:44:17.049626" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-16T23:44:17.048620" elapsed="0.001006"/>
+</test>
+<doc>Example test cases using the keyword-driven testing approach.
+
+All tests contain a workflow constructed from keywords in
+``CalculatorLibrary.py``. Creating new tests or editing
+existing is easy even for people without programming skills.
+
+The _keyword-driven_ appoach works well for normal test
+automation, but the _gherkin_ style might be even better
+if also business people need to understand tests. If the
+same workflow needs to repeated multiple times, it is best
+to use to the _data-driven_ approach.</doc>
+<status status="PASS" start="2024-07-16T23:44:16.981612" elapsed="0.069014"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Keyword Driven">Keyword Driven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
